@@ -1,0 +1,4 @@
+# This contains the files which can be regenerated and hence we do not ppush them to git.
+/node_modules
+.parcel-cache
+dist
