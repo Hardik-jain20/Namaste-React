@@ -1,0 +1,26 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namaste-React Course by Akshay Saini",
+  "homepage": "https://github.com/Hardik-jain20/Namaste-React#readme",
+  "bugs": {
+    "url": "https://github.com/Hardik-jain20/Namaste-React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hardik-jain20/Namaste-React.git"
+  },
+  "license": "ISC",
+  "author": "Hardik Jain",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  }
+}
