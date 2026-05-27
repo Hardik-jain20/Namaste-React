@@ -1,0 +1,15 @@
+#heading1{
+    color: red;
+    background-color: aqua;
+    width: 350px;
+}
+#child1{
+    color: red;
+    background-color: aqua;
+    width: 350px;
+}
+#child2{
+    color: blue;
+    background-color: yellow;
+    width: 350px;
+}
