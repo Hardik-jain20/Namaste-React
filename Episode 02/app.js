@@ -5,3 +5,4 @@ const heading = React.createElement("h1", {id: "heading"}, "I'm heading from Rea
 const root = ReactDOM.createRoot(document.querySelector('#root'));
 
 root.render(heading);
+//updated
