@@ -14,6 +14,8 @@
   "author": "Hardik Jain",
   "type": "commonjs",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel buid index.html",
     "test": "jest"
   },
   "devDependencies": {
@@ -22,5 +24,8 @@
   "dependencies": {
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
-  }
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
