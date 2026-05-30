@@ -49,3 +49,8 @@ Our App Mock design
 
 - export const VARIABLE_NAME;
 - import {VARIABLE_NAME} from "Path";
+
+# React Hooks
+(Normal Js utility function)
+- useState() - Superpowerful state variable in React, maintaining a sync with data and UI layer
+- useEffect()
