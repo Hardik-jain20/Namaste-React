@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: beige;
+}
+.logo-img{
+    width: 100px;
+}
+.nav-items > ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.nav-items > ul > li{
+    padding: 10px;
+    margin: 10px;
+}
+.logo{
+    display: flex;
+}
+.companyName{
+    padding: 10px;
+}
+/* .body{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+} */
+.btn{
+    margin: 10px;
+}
+.res-card{
+    background-color: #fdf8eb;
+    /* width: 200px; */
+    height: fit-content;
+    /* padding: 2px;
+    margin: 5px; */
+}
+.res-card:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+.res-logo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.restaurantContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin: 10px 0px;
+    
+}
+.shimmer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin: 10px 0px;
+    
+}
+.shimmer-card{
+    width: 200px;
+    height: 350px;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+    padding: 20px;
+    margin: 5px;
+}
+.shimmer-button{
+    margin: 10px;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+    width: 150px;
+    height: 20px;;
+}
+.login-btn{
+    cursor: pointer;
+    padding: 0 20px;
+    border-radius: 50px;
+    width: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.filterButton{
+    display: flex;
+    flex-wrap: wrap;
+}
