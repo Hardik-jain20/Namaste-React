@@ -32,10 +32,10 @@
 }
 .res-card{
     background-color: #fdf8eb;
-    width: 200px;
+    /* width: 200px; */
     height: fit-content;
-    padding: 2px;
-    margin: 5px;
+    /* padding: 2px;
+    margin: 5px; */
 }
 .res-card:hover{
     cursor: pointer;
@@ -47,12 +47,18 @@
     object-fit: cover;
 }
 .restaurantContainer{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin: 10px 0px;
+    
 }
 .shimmer-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin: 10px 0px;
+    
 }
 .shimmer-card{
     width: 200px;
@@ -74,4 +80,8 @@
     width: 80px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
+}
+.filterButton{
+    display: flex;
+    flex-wrap: wrap;
 }
