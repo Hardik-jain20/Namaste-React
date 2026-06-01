@@ -67,3 +67,11 @@
     width: 150px;
     height: 20px;;
 }
+.login-btn{
+    cursor: pointer;
+    padding: 0 20px;
+    border-radius: 50px;
+    width: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}

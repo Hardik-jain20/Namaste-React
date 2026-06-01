@@ -5,7 +5,10 @@ import { useEffect, useState } from "react";
 
 const Body = () => {
     // local state variable
+    // whenever a state variable updates, react triggers a reconcilation cycle (re-renders the component)
     const [lisOfRestaurants, setListOfRestaurant] = useState([]);
+    const [filterdRestaurant, setFilterdRestaurant] = useState([]);
+    const [searchText, setSearchText] = useState("");
 
     useEffect(() => {
         fetchData();
@@ -16,6 +19,7 @@ const Body = () => {
         const json = await data.json();
         console.log(json);
         setListOfRestaurant(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
+        setFilterdRestaurant(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
     };
 
     if(lisOfRestaurants.length === 0){
@@ -25,6 +29,21 @@ const Body = () => {
     return (
         <div className="body">
             <div className="filterButton">
+
+                <div className="search">
+                    <input type="text" className="search-box" value={searchText} onChange={(e) => {
+                        setSearchText(e.target.value);
+                    }} />
+                    <button onClick={() => {
+                        //filter the res-cars and update the ui.
+                        const filterdRestaurant = lisOfRestaurants.filter(
+                            (res) => res.info.name.toLowerCase().includes(searchText)
+                        );
+
+                        setFilterdRestaurant(filterdRestaurant);
+                    }}>Search</button>
+                </div>
+
                 <button className="btn" onClick={()=> {
                     const filteredList = lisOfRestaurants.filter(
                     (res) => res.info.avgRating > 4.2
@@ -33,7 +52,7 @@ const Body = () => {
                 }}> Top Rated Restaurant</button>
             </div>
             <div className="restaurantContainer">
-                {lisOfRestaurants.map((restaurant) => <RestaurantCard key = {restaurant.info.id} resData = {restaurant}/>)}
+                {filterdRestaurant.map((restaurant) => <RestaurantCard key = {restaurant.info.id} resData = {restaurant}/>)}
             </div>
         </div>
     )
