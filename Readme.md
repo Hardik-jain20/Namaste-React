@@ -54,3 +54,7 @@ Our App Mock design
 (Normal Js utility function)
 - useState() - Superpowerful state variable in React, maintaining a sync with data and UI layer
 - useEffect()
+
+# Corsproxy.io
+- We use this to avoid using cors plugin, just got to this website copy the url for development 
+and then paste that before your api_url.
