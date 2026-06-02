@@ -1,16 +1,18 @@
-import React from "react"
+import React, { Children } from "react"
 import ReactDOM from "react-dom/client"
 //import logo from "./foodie-woodie-logo.png"
 import Header from "./components/Header";
 import Body from "./components/Body";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider, Outlet } from "react-router-dom";
 import About from "./components/About";
+import Contact from "./components/Contact";
+import Error from "./components/Error";
 
 const AppLayout = () => {
     return (
         <div className="app-layout">
             <Header />
-            <Body />
+            <Outlet />
         </div>
     )
 }
@@ -19,14 +21,25 @@ const appRouter = createBrowserRouter([
     {
         path: "/",
         element: <AppLayout />,
-    },
-    {
-        path: "/about",
-        element: <About />,
+        children: [
+            {
+                path: "/",
+                element: <Body />,
+            },
+            {
+                path: "/about",
+                element: <About />
+            },
+            {
+                path: "/contact",
+                element: <Contact />
+            }
+        ],
+        errorElement: <Error />
     }
 ])
 
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
-root.render(<AppLayout />);
+root.render(<RouterProvider router={appRouter}/>);

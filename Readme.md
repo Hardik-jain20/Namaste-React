@@ -60,5 +60,5 @@ Our App Mock design
 - We use this to avoid using cors plugin, just got to this website copy the url for development 
 and then paste that before your api_url.
 
-# react-router-dome library 
+# react-router-dom library 
 - Used for routing to different paths/rotes insode our app.

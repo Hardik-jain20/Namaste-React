@@ -85,3 +85,24 @@
     display: flex;
     flex-wrap: wrap;
 }
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home{
+    border-radius: 999px;
+    padding: 1rem;
+    background-color: beige;
+    cursor: pointer;
+    
+}
+.error-img{
+    width: 350px;
+    height: 230px;
+    border-radius: .375rem;
+}
+.err-para{
+    margin-top: -1rem;
+}
