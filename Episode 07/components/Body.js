@@ -3,6 +3,7 @@ import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { useEffect, useState } from "react";
 
+
 const Body = () => {
     // local state variable
     // whenever a state variable updates, react triggers a reconcilation cycle (re-renders the component)
