@@ -62,3 +62,17 @@ and then paste that before your api_url.
 
 # react-router-dom library 
 - Used for routing to different paths/rotes insode our app.
+
+# parent-child life cycle in class based component
+- parent constructor
+- parent render
+    - First Child constructor
+    - First Child render
+
+    - Second Child constructor
+    - Second Child render
+    
+    DOM Updataion - In single batch
+    - First Child Component Mount
+    - Second Child Component Mount
+- parent mount
