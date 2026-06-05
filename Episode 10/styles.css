@@ -112,3 +112,10 @@
     padding: 5px;
     width: fit-content;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.online-status {
+    font-weight: bolder;
+}
