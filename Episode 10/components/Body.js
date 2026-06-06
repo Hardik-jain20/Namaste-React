@@ -41,7 +41,7 @@ const Body = () => {
             <div className="filterButton flex">
 
                 <div className="search">
-                    <input type="text" className="search-box border border-gray-800 m-0.5" value={searchText} onChange={(e) => {
+                    <input type="text" className="search-box border border-gray-800 mx-4" value={searchText} onChange={(e) => {
                         setSearchText(e.target.value);
                     }} />
                     <button onClick={() => {
@@ -61,7 +61,7 @@ const Body = () => {
                     setListOfRestaurant(filteredList);
                 }}> Top Rated Restaurant</button>
             </div>
-            <div className="restaurantContainer flex flex-wrap">
+            <div className="restaurantContainer flex flex-wrap ">
                 {filterdRestaurant.map((restaurant) => <Link key = {restaurant.info.id} to = {"restaurants/" + restaurant.info.id}><RestaurantCard resData = {restaurant}/></Link>)}
             </div>
         </div>

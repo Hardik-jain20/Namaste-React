@@ -29,7 +29,7 @@ const Header = () => {
                         <Link to="/about">About Us</Link>
                     </li>
                     <li className="px-4 ">
-                        <Link to="/contact">Conatct Us</Link>
+                        <Link to="/contact">Contact Us</Link>
                     </li>
                     <li className="cart px-4">
                         <Link to="/Cart">🛒 Cart</Link>    

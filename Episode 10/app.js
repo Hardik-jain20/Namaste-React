@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client"
 //import logo from "./foodie-woodie-logo.png"
 import Header from "./components/Header";
 import Body from "./components/Body";
-import { createBrowserRouter, Outlet, RouterProvider, Outlet } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
@@ -45,6 +45,10 @@ const appRouter = createBrowserRouter([
                 path: "/grocery",
                 element: <Suspense fallback = {<h1>Loading...</h1>}><Grocery /></Suspense>
             },
+            {
+                path: "*",
+                element: <Error />
+            }
 
         ],
         errorElement: <Error />
