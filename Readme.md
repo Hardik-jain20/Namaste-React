@@ -1,6 +1,7 @@
 # Namaste React 🚀
 
 # Parcel's advantages
+
 - Dev Build
 - Starts the local server
 - HMR - Hot Module Replacement (Automatically refreshes the web browser)
@@ -9,37 +10,38 @@
 - Minification and Compression of large code
 - Image Optimisation due to faster reloads
 - Bundling
-- Consistent Hashing 
+- Consistent Hashing
 - Code Splitting
 - Differential bundling - To support older browser using browserlist dependency
 - Easy diagnostics due to easier error handling
 - HTTPs supporting app using npx parcel buid index.html
-- Tree Shaking to remove unused unwanted code from the app. 
+- Tree Shaking to remove unused unwanted code from the app.
 
 # Foodie Woodie 😋 Project
 
 Our App Mock design
 
 - Header
-    - logo
-    - nav-items
-        - home, about us, contact us, cart 🛒
+  - logo
+  - nav-items
+    - home, about us, contact us, cart 🛒
 - Body
-    - Search bar and button
-    - Restaurant Container
-        - Restaurant Cards/ Carts
-            - img
-            - name of restaurant
-            - star rating
-            - ETA
-            - price
+  - Search bar and button
+  - Restaurant Container
+    - Restaurant Cards/ Carts
+      - img
+      - name of restaurant
+      - star rating
+      - ETA
+      - price
 - Footer
-    - copyright
-    - links
-    - address
-    - contact
+  - copyright
+  - links
+  - address
+  - contact
 
 # Import and Export types
+
 1. Default Import and Export
 
 - export default Component;
@@ -51,28 +53,35 @@ Our App Mock design
 - import {VARIABLE_NAME} from "Path";
 
 # React Hooks
+
 (Normal Js utility function)
+
 - useState() - Superpowerful state variable in React, maintaining a sync with data and UI layer
-- useEffect() - 
+- useEffect() -
 - useRouteError - Maintains better Error handling.
+- useContext - Helps us to excess data globally. [Uses CreateContext. useContext.Provider, useContext.Consumer]
 
 # Corsproxy.io
-- We use this to avoid using cors plugin, just got to this website copy the url for development 
-and then paste that before your api_url.
 
-# react-router-dom library 
+- We use this to avoid using cors plugin, just got to this website copy the url for development
+  and then paste that before your api_url.
+
+# react-router-dom library
+
 - Used for routing to different paths/rotes insode our app.
 
 # parent-child life cycle in class based component
+
 - parent constructor
 - parent render
-    - First Child constructor
-    - First Child render
+  - First Child constructor
+  - First Child render
 
-    - Second Child constructor
-    - Second Child render
-    
-    DOM Updataion - In single batch
-    - First Child Component Mount
-    - Second Child Component Mount
+  - Second Child constructor
+  - Second Child render
+
+  DOM Updataion - In single batch
+  - First Child Component Mount
+  - Second Child Component Mount
+
 - parent mount
