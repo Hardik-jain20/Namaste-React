@@ -13,7 +13,7 @@ const cartSlice = createSlice({
       state.items.pop();
     },
     clearItem: (state, action) => {
-      state.items.length = 0;
+      state.items.length = 0; // will make state empty array
     },
   },
 });
