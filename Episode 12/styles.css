@@ -1,0 +1,21 @@
+@import "tailwindcss";
+.shimmer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin: 10px 0px;
+    
+}
+.shimmer-card{
+    width: 200px;
+    height: 350px;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+    padding: 20px;
+    margin: 5px;
+}
+.shimmer-button{
+    margin: 10px;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+    width: 150px;
+    height: 20px;;
+}
