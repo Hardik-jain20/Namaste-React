@@ -60,6 +60,8 @@ Our App Mock design
 - useEffect() -
 - useRouteError - Maintains better Error handling.
 - useContext - Helps us to excess data globally. [Uses CreateContext. useContext.Provider, useContext.Consumer]
+- useSelector() - For subscribing the react component to the rtk store
+- useDispatch() - for enabling dispatch to an action
 
 # Corsproxy.io
 
@@ -85,3 +87,13 @@ Our App Mock design
   - Second Child Component Mount
 
 - parent mount
+
+# Redux
+
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- Slice (cartSlice)
+- dispatch(action)
+- Selector
+- Initially in vanilla redux there was no mutation of state, new state was defined and then mutation was done to that and returning the newstate would provide us the mutated state.
