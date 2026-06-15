@@ -97,3 +97,18 @@ Our App Mock design
 - dispatch(action)
 - Selector
 - Initially in vanilla redux there was no mutation of state, new state was defined and then mutation was done to that and returning the newstate would provide us the mutated state.
+
+# Types of Testing for Developers:
+
+- Unit Testing - Testing a specific component.
+- Integrated Testing - Testinng the integration between one or more than one component.
+- End to End Testing / e2e testing - Testing the whole app from the user start to user end.
+
+# Setting up Testing in our app
+
+- Install React Testing Library
+- Install jest
+- Install Babel dependency
+- Configure Babel
+- Configure Parcel file to disable default babel transpilation
+- jest configuration using (npx jest --init)
