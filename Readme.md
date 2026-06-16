@@ -111,4 +111,14 @@ Our App Mock design
 - Install Babel dependency
 - Configure Babel
 - Configure Parcel file to disable default babel transpilation
-- jest configuration using (npx jest --init)
+- jest configuration using npm init @jest/latest [npx jest --init deprecated], test environment to choose is jsdom
+- Install jsdom library
+
+# Testing file Syntax
+
+- They can be stored in \_\_\tests\_\_ folder [Two underscore in the front and two underscore in the back are known as '**DUNDER METHOD**']
+- They are named as:
+  - Header.test.js
+  - Header.test.ts
+  - Header.spec.js
+  - Header.spec.ts
