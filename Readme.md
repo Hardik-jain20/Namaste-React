@@ -113,6 +113,9 @@ Our App Mock design
 - Configure Parcel file to disable default babel transpilation
 - jest configuration using npm init @jest/latest [npx jest --init deprecated], test environment to choose is jsdom
 - Install jsdom library
+- Instal @babel/preset-react - to make jsx work in test cases
+- Include @babel/preset-react inside the babel config
+- Instal @testing-library/jest-dom
 
 # Testing file Syntax
 
